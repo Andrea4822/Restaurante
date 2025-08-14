@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color:#E6E6FA;
+}
+h1, h2, h3 {
+  color: #6A0DAD; 
+  text-align: center;
+  font-family: playfair;
+} 
+p {
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  font-family: playfair;
+  font-size: medium;
+}
+
+.cholocate,
+.creme,
+.macarron,
+.Ratatouille,
+.sufle,
+.croasan {
+  background-color: #f6e7f6;
+  border: 1px solid #c8a2c8;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.cholocate img,
+.creme img,
+.macarron img,
+.Ratatouille img,
+.sufle img,
+.croasan img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+ 
+}
+
+.cholocate:hover,
+.creme:hover,
+.macarron:hover,
+.Ratatouille:hover,
+.sufle:hover,
+.croasan:hover {
+  background-color: #267fc0;
+  transform: scale(1.05);
+
+}
+
+
+.descripcion {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.precio {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #6A0DAD;
+
+}
+
+
+button {
+  background-color: #a2c8a5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+   display: block;
+  margin: 10px auto 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+  
+}
+
+button:hover {
+  background-color: #2ba24b;
+  transform: scale(1.05)
+}
+
+/* Contenedor invisible que organiza las tarjetas */
+body > .cholocate,
+body > .creme,
+body > .macarron,
+body > .Ratatouille,
+body > .sufle,
+body > .croasan {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* computadores */
+@media (min-width: 1025px) {
+  .cholocate,
+  .creme,
+  .macarron,
+  .Ratatouille,
+  .sufle,
+  .croasan {
+    background-color: #3366cc; 
+    color: rgb(21, 7, 7);
+  }
+}
+
+/* para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cholocate,
+  .creme,
+  .macarron,
+  .Ratatouille,
+  .sufle,
+  .croasan {
+    background-color: #4caf50; 
+    color: rgb(21, 14, 14);
+  }
+}
+
+/* pantallas para celular */
+@media (max-width: 767px) {
+  .cholocate,
+  .creme,
+  .macarron,
+  .Ratatouille,
+  .sufle,
+  .croasan {
+    background-color: #ffeb3b; 
+    color: #000; 
+  }
+}
